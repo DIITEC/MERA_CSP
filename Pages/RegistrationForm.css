@@ -51,3 +51,12 @@ form{
     height: 2px;
     margin: 21px 0px;
 }
+
+
+@media only screen and (max-width: 768px) {
+ 
+.RegistrationForm>form>.inputForm{
+    display: flex !important;
+    flex-direction: column !important;
+}
+}

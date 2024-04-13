@@ -23,6 +23,9 @@ import ServicesEarn from "./Pages/ServicesEarn";
 import ServicesEntertain from "./Pages/ServicesEntertain";
 import ServicesTour from "./Pages/ServicesTour";
 import ServicesLearning from "./Pages/ServicesLearning";
+import Refund from "./policy/Refund";
+import Terms from "./policy/Terms";
+import Privacy from "./policy/Privacy";
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -50,6 +53,10 @@ const App = () => {
         <Route path="/Service_tour" element={<ServicesTour />} />
         <Route path="/Service_entertain" element={<ServicesEntertain />} />
         <Route path="/Service_earn" element={<ServicesEarn />} />
+
+        <Route path="/refund-policy" element={<Refund/>} />
+        <Route path="/privacy-policy" element={<Privacy/>} />
+        <Route path="/terms-condition" element={<Terms/>} />
 
 
         <Route path="/enrollment-registration" element={<DigitalMitraEnrollment />} />

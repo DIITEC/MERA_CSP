@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 import Navtop from "../Components/Navtop";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import banksrvs from "../Images/Banksrvs.jpg";
-import Aepssrvsimg from "../Images/aepsadharsrvs.png";
-import microAtm from "../Images/MicroATM1.png";
+import insurance from "../Images/insurance.png";
+import insurrance from "../Images/general-InsImage.png";
+import healthIns from "../Images/Health-Ins.webp";
 import accountOpening from "../Images/banking-Commercial.webp";
 import cashDeposit from "../Images/cashDeposit.png";
 import "../Components/ServiceBox.css";
@@ -12,7 +12,8 @@ import { Link } from "react-router-dom";
 
 const ServicesInsurance = () => {
   return (
-    <div><Navtop />
+    <div>
+      <Navtop />
       <Navbar />
 
       <div className="servicesMainBox">
@@ -26,7 +27,7 @@ const ServicesInsurance = () => {
             </p>
           </div>
           <div className="imgsec1">
-            <img src={banksrvs} alt="" />
+            <img src={insurrance} alt="" />
           </div>
         </div>
         <div className="ServiceDetails1">
@@ -40,61 +41,33 @@ const ServicesInsurance = () => {
             <div className="srvsBoxMain">
               <div className="srvsbox">
                 <div className="srvsSec1det">
-                  <span>Aeps</span>
+                  <span>General Insurance</span>
                   <span>
-                    It's a payment service enabling bank customers to utilize
-                    Aadhaar as their identity to access Aadhaar-enabled bank
-                    accounts, facilitating basic banking transactions such as
-                    balance inquiries and cash withdrawals through a Business
-                    Correspondent.
+                    General Insurance comprises insurance contracts beyond Life
+                    Insurance, offering a broad spectrum of coverage. This
+                    encompasses policies such as fire, motor, accident, and
+                    others.
                   </span>
                   <Link to="/aeps-page">Learn More</Link>
                 </div>
                 <div className="srvsSec2det">
-                  <img src={Aepssrvsimg} alt="" />
+                  <img src={insurance} alt="" />
                 </div>
               </div>
               <div className="srvsbox">
                 <div className="srvsSec1det">
-                  <span>Micro ATM</span>
+                  <span>Health Insurance</span>
                   <span>
-                    Access cash withdrawal services using debit/Credit cards
-                    over 100+ banks.
+                    customers can access quality healthcare without worrying
+                    about the financial burden. It serves as a crucial safety
+                    net, ensuring that individuals and families can receive
+                    timely medical treatment without compromising their
+                    financial stability.
                   </span>
                   <Link to="/microAtm-page">Learn More</Link>
                 </div>
                 <div className="srvsSec2det">
-                  <img src={microAtm} alt="" />
-                </div>
-              </div>
-              <div className="srvsbox">
-                <div className="srvsSec1det">
-                  <span>Account Opening </span>
-                  <span>
-                    Savings Current account opening services are now available
-                    4+ Banks on MeraCSP portal. Digital Mitr/VLE can help avail
-                    there customer to open there account attractive commission
-                    on there account opening.
-                  </span>
-                  <Link>Learn More</Link>
-                </div>
-                <div className="srvsSec2det">
-                  <img src={accountOpening} alt="" />
-                </div>
-              </div>
-              <div className="srvsbox">
-                <div className="srvsSec1det">
-                  <span>Cash Deposit </span>
-                  <span>
-                    MeraCSP enabling partner merchants to provide banking
-                    services to their customers in their local communities.
-                    Customers will visit the merchant outlet to avail of AePS
-                    cash deposit services.
-                  </span>
-                  <Link>Learn More</Link>
-                </div>
-                <div className="srvsSec2det">
-                  <img src={cashDeposit} alt="" />
+                  <img src={healthIns} alt="" />
                 </div>
               </div>
             </div>
@@ -106,8 +79,9 @@ const ServicesInsurance = () => {
         </div>
       </div>
 
-      <Footer /></div>
-  )
-}
+      <Footer />
+    </div>
+  );
+};
 
-export default ServicesInsurance
+export default ServicesInsurance;

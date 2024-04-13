@@ -39,7 +39,8 @@ const ServicesEntertain = () => {
           </div>
           <div className="servicedetailSec1">
             <div className="srvsBoxMain">
-              <div className="srvsbox">
+            <marquee behavior="" direction="" style={{"backgroundcolor":"yellow", "color":"red",}}>Entertainment Services Coming Soon..............................................</marquee>
+              {/* <div className="srvsbox">
                 <div className="srvsSec1det">
                   <span>Aeps</span>
                   <span>
@@ -54,50 +55,8 @@ const ServicesEntertain = () => {
                 <div className="srvsSec2det">
                   <img src={Aepssrvsimg} alt="" />
                 </div>
-              </div>
-              <div className="srvsbox">
-                <div className="srvsSec1det">
-                  <span>Micro ATM</span>
-                  <span>
-                    Access cash withdrawal services using debit/Credit cards
-                    over 100+ banks.
-                  </span>
-                  <Link to="/microAtm-page">Learn More</Link>
-                </div>
-                <div className="srvsSec2det">
-                  <img src={microAtm} alt="" />
-                </div>
-              </div>
-              <div className="srvsbox">
-                <div className="srvsSec1det">
-                  <span>Account Opening </span>
-                  <span>
-                    Savings Current account opening services are now available
-                    4+ Banks on MeraCSP portal. Digital Mitr/VLE can help avail
-                    there customer to open there account attractive commission
-                    on there account opening.
-                  </span>
-                  <Link>Learn More</Link>
-                </div>
-                <div className="srvsSec2det">
-                  <img src={accountOpening} alt="" />
-                </div>
-              </div>
-              <div className="srvsbox">
-                <div className="srvsSec1det">
-                  <span>Cash Deposit </span>
-                  <span>
-                    MeraCSP enabling partner merchants to provide banking
-                    services to their customers in their local communities.
-                    Customers will visit the merchant outlet to avail of AePS
-                    cash deposit services.
-                  </span>
-                  <Link>Learn More</Link>
-                </div>
-                <div className="srvsSec2det">
-                  <img src={cashDeposit} alt="" />
-                </div>
-              </div>
+              </div> */}
+           
             </div>
           </div>
         </div>

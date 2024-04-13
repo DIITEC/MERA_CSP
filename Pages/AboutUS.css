@@ -90,7 +90,7 @@
 .ourTeamImagesBoxes {
   display: flex;
   gap: 10px;
-  width: 63rem;
+  width: 76%;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -110,4 +110,12 @@
 }
 .iconOurteam > a {
   color: #8f8f8f;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .about-section-part {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
 }

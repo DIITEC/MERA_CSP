@@ -1,18 +1,19 @@
-import React from 'react'
+import React from "react";
 import Navtop from "../Components/Navtop";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import banksrvs from "../Images/Banksrvs.jpg";
-import Aepssrvsimg from "../Images/aepsadharsrvs.png";
-import microAtm from "../Images/MicroATM1.png";
-import accountOpening from "../Images/banking-Commercial.webp";
-import cashDeposit from "../Images/cashDeposit.png";
+import travel from "../Images/travel.png";
+import Irctc from "../Images/irctcImage.png";
+import Bus from "../Images/busImg.png";
+import airline from "../Images/airline.png";
+
 import "../Components/ServiceBox.css";
 import { Link } from "react-router-dom";
 
 const ServicesTour = () => {
   return (
-    <div><Navtop />
+    <div>
+      <Navtop />
       <Navbar />
 
       <div className="servicesMainBox">
@@ -26,7 +27,7 @@ const ServicesTour = () => {
             </p>
           </div>
           <div className="imgsec1">
-            <img src={banksrvs} alt="" />
+            <img src={travel} alt="" />
           </div>
         </div>
         <div className="ServiceDetails1">
@@ -40,61 +41,44 @@ const ServicesTour = () => {
             <div className="srvsBoxMain">
               <div className="srvsbox">
                 <div className="srvsSec1det">
-                  <span>Aeps</span>
+                  <span>IRCTC Agent</span>
                   <span>
-                    It's a payment service enabling bank customers to utilize
-                    Aadhaar as their identity to access Aadhaar-enabled bank
-                    accounts, facilitating basic banking transactions such as
-                    balance inquiries and cash withdrawals through a Business
-                    Correspondent.
+                    Looking to dive into a profitable industry? Ready to unlock
+                    substantial commission potential? Join the IRCTC agent
+                    family and seize an unparalleled opportunity.
                   </span>
                   <Link to="/aeps-page">Learn More</Link>
                 </div>
                 <div className="srvsSec2det">
-                  <img src={Aepssrvsimg} alt="" />
+                  <img src={Irctc} alt="" />
                 </div>
               </div>
               <div className="srvsbox">
                 <div className="srvsSec1det">
-                  <span>Micro ATM</span>
+                  <span>Bus</span>
                   <span>
-                    Access cash withdrawal services using debit/Credit cards
-                    over 100+ banks.
+                    Interested in stepping into a lucrative industry? Looking to
+                    earn high commissions? Explore the excellent opportunity to
+                    join the IRCTC agent family.
                   </span>
                   <Link to="/microAtm-page">Learn More</Link>
                 </div>
                 <div className="srvsSec2det">
-                  <img src={microAtm} alt="" />
+                  <img src={Bus} alt="" />
                 </div>
               </div>
               <div className="srvsbox">
                 <div className="srvsSec1det">
-                  <span>Account Opening </span>
+                  <span>Airline </span>
                   <span>
-                    Savings Current account opening services are now available
-                    4+ Banks on MeraCSP portal. Digital Mitr/VLE can help avail
-                    there customer to open there account attractive commission
-                    on there account opening.
+                    Our Airline Ticket Booking service provides comprehensive
+                    solutions for both domestic and international flights,
+                    catering to a variety of travel needs.g.
                   </span>
                   <Link>Learn More</Link>
                 </div>
                 <div className="srvsSec2det">
-                  <img src={accountOpening} alt="" />
-                </div>
-              </div>
-              <div className="srvsbox">
-                <div className="srvsSec1det">
-                  <span>Cash Deposit </span>
-                  <span>
-                    MeraCSP enabling partner merchants to provide banking
-                    services to their customers in their local communities.
-                    Customers will visit the merchant outlet to avail of AePS
-                    cash deposit services.
-                  </span>
-                  <Link>Learn More</Link>
-                </div>
-                <div className="srvsSec2det">
-                  <img src={cashDeposit} alt="" />
+                  <img src={airline} alt="" />
                 </div>
               </div>
             </div>
@@ -106,8 +90,9 @@ const ServicesTour = () => {
         </div>
       </div>
 
-      <Footer /></div>
-  )
-}
+      <Footer />
+    </div>
+  );
+};
 
-export default ServicesTour
+export default ServicesTour;

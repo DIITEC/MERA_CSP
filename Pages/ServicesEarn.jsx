@@ -3,10 +3,8 @@ import Navtop from "../Components/Navtop";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import banksrvs from "../Images/Banksrvs.jpg";
-import Aepssrvsimg from "../Images/aepsadharsrvs.png";
-import microAtm from "../Images/MicroATM1.png";
-import accountOpening from "../Images/banking-Commercial.webp";
-import cashDeposit from "../Images/cashDeposit.png";
+import digBajar from "../Images/cropped-digitalbazar.png";
+
 import "../Components/ServiceBox.css";
 import { Link } from "react-router-dom";
 
@@ -41,63 +39,20 @@ const ServicesEarn = () => {
             <div className="srvsBoxMain">
               <div className="srvsbox">
                 <div className="srvsSec1det">
-                  <span>Aeps</span>
+                  <span>Digital Bazar</span>
                   <span>
-                    It's a payment service enabling bank customers to utilize
-                    Aadhaar as their identity to access Aadhaar-enabled bank
-                    accounts, facilitating basic banking transactions such as
-                    balance inquiries and cash withdrawals through a Business
-                    Correspondent.
+                    secure transactions, and doorstep delivery, the digital
+                    bazaar brings the world of shopping right to your screen,
+                    making it easier than ever to find what you're looking for,
+                    whenever you need it.
                   </span>
                   <Link to="/aeps-page">Learn More</Link>
                 </div>
                 <div className="srvsSec2det">
-                  <img src={Aepssrvsimg} alt="" />
+                  <img src={digBajar} alt="" />
                 </div>
               </div>
-              <div className="srvsbox">
-                <div className="srvsSec1det">
-                  <span>Micro ATM</span>
-                  <span>
-                    Access cash withdrawal services using debit/Credit cards
-                    over 100+ banks.
-                  </span>
-                  <Link to="/microAtm-page">Learn More</Link>
-                </div>
-                <div className="srvsSec2det">
-                  <img src={microAtm} alt="" />
-                </div>
-              </div>
-              <div className="srvsbox">
-                <div className="srvsSec1det">
-                  <span>Account Opening </span>
-                  <span>
-                    Savings Current account opening services are now available
-                    4+ Banks on MeraCSP portal. Digital Mitr/VLE can help avail
-                    there customer to open there account attractive commission
-                    on there account opening.
-                  </span>
-                  <Link>Learn More</Link>
-                </div>
-                <div className="srvsSec2det">
-                  <img src={accountOpening} alt="" />
-                </div>
-              </div>
-              <div className="srvsbox">
-                <div className="srvsSec1det">
-                  <span>Cash Deposit </span>
-                  <span>
-                    MeraCSP enabling partner merchants to provide banking
-                    services to their customers in their local communities.
-                    Customers will visit the merchant outlet to avail of AePS
-                    cash deposit services.
-                  </span>
-                  <Link>Learn More</Link>
-                </div>
-                <div className="srvsSec2det">
-                  <img src={cashDeposit} alt="" />
-                </div>
-              </div>
+             
             </div>
           </div>
         </div>

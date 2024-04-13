@@ -1,23 +1,37 @@
 import React from "react";
-import './Sidebar.css'
-import sidebar from "../../Images/SideBar.png"
+import "./Sidebar.css";
+import sidebar from "../../Images/SideBar.png";
 import { Link } from "react-router-dom";
 const Sidebar = () => {
   return (
-   <div className="sidebar">
-    <img src={sidebar}/>
-    <div className="sidebarButton">
-        <Link className="btn"  to='/userPannel-dashboard' data-toggle="modal" data-target="#exampleModalCenter">
+    <div className="sidebar sidebar2">
+      <img src={sidebar} />
+      <div className="sidebarButton">
+        <Link
+          className="btn"
+          to="/userPannel-dashboard"
+          data-toggle="modal"
+          data-target="#exampleModalCenter"
+        >
           DASHBOARD
         </Link>
-        <Link to='/userPannel-assesments' className="btn"  data-toggle="modal" data-target="#exampleModalCenter">
+        <Link
+          to="/userPannel-assesments"
+          className="btn"
+          data-toggle="modal"
+          data-target="#exampleModalCenter"
+        >
           ASSESSMENT
         </Link>
-        <Link className="btn" data-toggle="modal" data-target="#exampleModalCenter">
+        <Link
+          className="btn"
+          data-toggle="modal"
+          data-target="#exampleModalCenter"
+        >
           DAWNLOAD CERTIFICATE
         </Link>
+      </div>
     </div>
-   </div>
   );
 };
 
