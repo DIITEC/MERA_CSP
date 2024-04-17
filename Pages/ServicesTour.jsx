@@ -47,7 +47,7 @@ const ServicesTour = () => {
                     substantial commission potential? Join the IRCTC agent
                     family and seize an unparalleled opportunity.
                   </span>
-                  <Link to="/aeps-page">Learn More</Link>
+                  <Link to="/irctc-page">Learn More</Link>
                 </div>
                 <div className="srvsSec2det">
                   <img src={Irctc} alt="" />
@@ -61,7 +61,7 @@ const ServicesTour = () => {
                     earn high commissions? Explore the excellent opportunity to
                     join the IRCTC agent family.
                   </span>
-                  <Link to="/microAtm-page">Learn More</Link>
+                  <Link to="/bus-page">Learn More</Link>
                 </div>
                 <div className="srvsSec2det">
                   <img src={Bus} alt="" />
@@ -75,7 +75,7 @@ const ServicesTour = () => {
                     solutions for both domestic and international flights,
                     catering to a variety of travel needs.g.
                   </span>
-                  <Link>Learn More</Link>
+                  <Link to="/plane-page">Learn More</Link>
                 </div>
                 <div className="srvsSec2det">
                   <img src={airline} alt="" />

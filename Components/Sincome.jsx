@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import AepsImg from "../Images/aepsadharsrvs.png";
 import { Link } from "react-router-dom";
-const ServiceAeps = () => {
+const Sincome = () => {
   return (
     <div>
       <Navtop />
@@ -13,7 +13,7 @@ const ServiceAeps = () => {
       <div className="serviceAeps-Mainbox">
         <div id="serviceAepsCArdSrvs" className=" cardServiceSec1">
           <div className="contents1">
-            <span>Aeps</span>
+            <span>Income Tax Filling</span>
             <p>
               It's a payment service enabling bank customers to utilize Aadhaar
               as their identity to access Aadhaar-enabled bank accounts,
@@ -80,4 +80,4 @@ const ServiceAeps = () => {
   );
 };
 
-export default ServiceAeps;
+export default Sincome;

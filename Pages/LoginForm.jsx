@@ -20,7 +20,7 @@ const LoginForm = ({ setUser }) => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:3001/login",
+        "http://localhost:8000/api/auth/login",
         formData
       );
       alert("Login successful!");

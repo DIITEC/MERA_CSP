@@ -1,34 +1,33 @@
 import React from "react";
-import "./ServiceAeps.css";
 import Navtop from "./Navtop";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import AepsImg from "../Images/aepsadharsrvs.png";
+import cashDeposit from "../Images/cashDeposit.png";
 import { Link } from "react-router-dom";
-const ServiceAeps = () => {
+const ServiceCashdeposit = () => {
   return (
     <div>
+      {" "}
       <Navtop />
       <Navbar />
-      <div className="serviceAeps-Mainbox">
-        <div id="serviceAepsCArdSrvs" className=" cardServiceSec1">
+      <div className="ServiceAccount-Mainbox">
+        <div id="serviceAepsCArdSrvs" className="cardServiceSec1">
           <div className="contents1">
-            <span>Aeps</span>
+            <span>Cash Deposit</span>
             <p>
-              It's a payment service enabling bank customers to utilize Aadhaar
-              as their identity to access Aadhaar-enabled bank accounts,
-              facilitating basic banking transactions such as balance inquiries
-              and cash withdrawals through a Business Correspondent.
+              MeraCSP enabling partner merchants to provide banking services to
+              their customers in their local communities. Customers will visit
+              the merchant outlet to avail of AePS cash deposit services.
             </p>
           </div>
           <div className="imgsec1">
-            <img src={AepsImg} alt="" />
+            <img src={cashDeposit} alt="" />
           </div>
         </div>
         <div className="contentLmore1">
           <span>Benefits</span>
           <div className="lmore-part2">
-            <img src={AepsImg} alt="" />
+            <img src={cashDeposit} alt="" />
             <ul>
               <li>
                 It facilitates access to bank accounts through Aadhaar for all
@@ -80,4 +79,4 @@ const ServiceAeps = () => {
   );
 };
 
-export default ServiceAeps;
+export default ServiceCashdeposit;

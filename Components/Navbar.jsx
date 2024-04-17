@@ -27,12 +27,12 @@ const Navbar = () => {
   };
 
   const handleClickOutside = (event) => {
-    // if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-    //   setIsOpenReg(false);
-    // }
-    // if (dropdownRef2.current && !dropdownRef2.current.contains(event.target)) {
-    //   setIsOpenSrvs(false);
-    // }
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setIsOpenReg(false);
+    }
+    if (dropdownRef2.current && !dropdownRef2.current.contains(event.target)) {
+      setIsOpenSrvs(false);
+    }
     // if (dropdownRef4.current && !dropdownRef4.current.contains(event.target)) {
     //   setIsOpenReg(false);
     // }

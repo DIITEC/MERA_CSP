@@ -3,9 +3,10 @@ import "./ServiceAeps.css";
 import Navtop from "./Navtop";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import egov from "../Images/e-governance.png";
 import AepsImg from "../Images/aepsadharsrvs.png";
 import { Link } from "react-router-dom";
-const ServiceAeps = () => {
+const Egovern = () => {
   return (
     <div>
       <Navtop />
@@ -13,7 +14,7 @@ const ServiceAeps = () => {
       <div className="serviceAeps-Mainbox">
         <div id="serviceAepsCArdSrvs" className=" cardServiceSec1">
           <div className="contents1">
-            <span>Aeps</span>
+            <span>E-Governance</span>
             <p>
               It's a payment service enabling bank customers to utilize Aadhaar
               as their identity to access Aadhaar-enabled bank accounts,
@@ -22,13 +23,13 @@ const ServiceAeps = () => {
             </p>
           </div>
           <div className="imgsec1">
-            <img src={AepsImg} alt="" />
+            <img src={egov} alt="" />
           </div>
         </div>
         <div className="contentLmore1">
           <span>Benefits</span>
           <div className="lmore-part2">
-            <img src={AepsImg} alt="" />
+            <img src={egov} alt="" />
             <ul>
               <li>
                 It facilitates access to bank accounts through Aadhaar for all
@@ -69,9 +70,9 @@ const ServiceAeps = () => {
         </div>
         <div className="contentLmore3">
           <div className="galLmoreBox">
-          <span>Ready to Become an Digital-Mitr</span>
-          {/* <span>Join our agency  force that already has xxxx+ agents on board</span> */}
-          <Link to='/register'>Join Now</Link>
+            <span>Ready to Become an Digital-Mitr</span>
+            <span>Join our agency  force that already has xxxx+ agents on board</span>
+            <Link to='/register'>click here</Link>
           </div>
         </div>
       </div>
@@ -80,4 +81,4 @@ const ServiceAeps = () => {
   );
 };
 
-export default ServiceAeps;
+export default Egovern;

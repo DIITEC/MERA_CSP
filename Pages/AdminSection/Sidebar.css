@@ -1,5 +1,5 @@
 
-.sidebar {
+#sidebarPage {
     display: flex !important;
     flex-direction: column;
     border: 1px solid #f8f9fa;

@@ -48,7 +48,7 @@ const ServicesInsurance = () => {
                     encompasses policies such as fire, motor, accident, and
                     others.
                   </span>
-                  <Link to="/aeps-page">Learn More</Link>
+                  <Link to="/generalInsurance-page">Learn More</Link>
                 </div>
                 <div className="srvsSec2det">
                   <img src={insurance} alt="" />
@@ -64,7 +64,7 @@ const ServicesInsurance = () => {
                     timely medical treatment without compromising their
                     financial stability.
                   </span>
-                  <Link to="/microAtm-page">Learn More</Link>
+                  <Link to="/healthInsurance-page">Learn More</Link>
                 </div>
                 <div className="srvsSec2det">
                   <img src={healthIns} alt="" />

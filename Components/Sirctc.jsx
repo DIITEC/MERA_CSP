@@ -1,34 +1,30 @@
 import React from "react";
-import "./ServiceAeps.css";
 import Navtop from "./Navtop";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import AepsImg from "../Images/aepsadharsrvs.png";
+import cashDeposit from "../Images/irctcImage.png";
 import { Link } from "react-router-dom";
-const ServiceAeps = () => {
+const Sirctc = () => {
   return (
     <div>
+      {" "}
       <Navtop />
       <Navbar />
-      <div className="serviceAeps-Mainbox">
-        <div id="serviceAepsCArdSrvs" className=" cardServiceSec1">
+      <div className="ServiceAccount-Mainbox">
+        <div id="serviceAepsCArdSrvs" className="cardServiceSec1">
           <div className="contents1">
-            <span>Aeps</span>
+            <span>IRCTC</span>
             <p>
-              It's a payment service enabling bank customers to utilize Aadhaar
-              as their identity to access Aadhaar-enabled bank accounts,
-              facilitating basic banking transactions such as balance inquiries
-              and cash withdrawals through a Business Correspondent.
-            </p>
+            Looking to dive into a profitable industry? Ready to unlock substantial commission potential? Join the IRCTC agent family and seize an unparalleled opportunity.  </p>
           </div>
           <div className="imgsec1">
-            <img src={AepsImg} alt="" />
+            <img src={cashDeposit} alt="" />
           </div>
         </div>
         <div className="contentLmore1">
           <span>Benefits</span>
           <div className="lmore-part2">
-            <img src={AepsImg} alt="" />
+            <img src={cashDeposit} alt="" />
             <ul>
               <li>
                 It facilitates access to bank accounts through Aadhaar for all
@@ -62,14 +58,17 @@ const ServiceAeps = () => {
               <li>Pan Card</li>
               <li>Aadhar Card / Voter ID card</li>
               <li>Driving Licence / Passport</li>
-              <li>Passport sized photograph  in neutral background</li>
-              <li>cancelled cheque / Passbook first page  of applicant's bank account  / Bank Statement</li>
+              <li>Passport sized photograph in neutral background</li>
+              <li>
+                cancelled cheque / Passbook first page of applicant's bank
+                account / Bank Statement
+              </li>
             </ul>
           </div>
         </div>
         <div className="contentLmore3">
           <div className="galLmoreBox">
-          <span>Ready to Become an Digital-Mitr</span>
+           <span>Ready to Become an Digital-Mitr</span>
           {/* <span>Join our agency  force that already has xxxx+ agents on board</span> */}
           <Link to='/register'>Join Now</Link>
           </div>
@@ -80,4 +79,4 @@ const ServiceAeps = () => {
   );
 };
 
-export default ServiceAeps;
+export default Sirctc;

@@ -1,34 +1,30 @@
 import React from "react";
-import "./ServiceAeps.css";
 import Navtop from "./Navtop";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import AepsImg from "../Images/aepsadharsrvs.png";
+import cashDeposit from "../Images/recharge.png";
 import { Link } from "react-router-dom";
-const ServiceAeps = () => {
+const Smobile = () => {
   return (
     <div>
+      {" "}
       <Navtop />
       <Navbar />
-      <div className="serviceAeps-Mainbox">
-        <div id="serviceAepsCArdSrvs" className=" cardServiceSec1">
+      <div className="ServiceAccount-Mainbox">
+        <div id="serviceAepsCArdSrvs" className="cardServiceSec1">
           <div className="contents1">
-            <span>Aeps</span>
+            <span>Mobile/DTH Recharge</span>
             <p>
-              It's a payment service enabling bank customers to utilize Aadhaar
-              as their identity to access Aadhaar-enabled bank accounts,
-              facilitating basic banking transactions such as balance inquiries
-              and cash withdrawals through a Business Correspondent.
-            </p>
+            Give customers the flexibility to recharge their mobile, DTH services, and data cards seamlessly through our extensive network of 15+ partners. Take advantage of the frequent need for recharge transactions to establish a steady and recurring income stream.  </p>
           </div>
           <div className="imgsec1">
-            <img src={AepsImg} alt="" />
+            <img src={cashDeposit} alt="" />
           </div>
         </div>
         <div className="contentLmore1">
           <span>Benefits</span>
           <div className="lmore-part2">
-            <img src={AepsImg} alt="" />
+            <img src={cashDeposit} alt="" />
             <ul>
               <li>
                 It facilitates access to bank accounts through Aadhaar for all
@@ -77,7 +73,7 @@ const ServiceAeps = () => {
       </div>
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default ServiceAeps;
+export default Smobile

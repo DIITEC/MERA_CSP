@@ -86,7 +86,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer_copyRight">
-          <span>2023 © All rights reserved by MeraCSP</span>
+          <span>2024 © All rights reserved by MeraCSP</span>
           <span>
             Designed & developed by{" "}
             <a href="http://diitec.in/"> DIITEC INNOVATIONS PVT. LTD.</a>

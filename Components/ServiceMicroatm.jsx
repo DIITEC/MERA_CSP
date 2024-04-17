@@ -1,34 +1,29 @@
-import React from "react";
-import "./ServiceAeps.css";
-import Navtop from "./Navtop";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import AepsImg from "../Images/aepsadharsrvs.png";
-import { Link } from "react-router-dom";
-const ServiceAeps = () => {
+import React from 'react'
+import Navtop from './Navtop'
+import Navbar from './Navbar'
+import Footer from './Footer'
+import microAtm from '../Images/MicroATM1.png'
+import { Link } from 'react-router-dom'
+const ServiceMicroatm = () => {
   return (
-    <div>
-      <Navtop />
-      <Navbar />
-      <div className="serviceAeps-Mainbox">
-        <div id="serviceAepsCArdSrvs" className=" cardServiceSec1">
-          <div className="contents1">
-            <span>Aeps</span>
-            <p>
-              It's a payment service enabling bank customers to utilize Aadhaar
-              as their identity to access Aadhaar-enabled bank accounts,
-              facilitating basic banking transactions such as balance inquiries
-              and cash withdrawals through a Business Correspondent.
-            </p>
-          </div>
-          <div className="imgsec1">
-            <img src={AepsImg} alt="" />
-          </div>
+    <div>  <Navtop />
+    <Navbar />
+    <div className="ServiceMicroatm-Mainbox">
+      <div id="serviceAepsCArdSrvs" className="cardServiceSec1">
+        <div className="contents1">
+          <span>Micro ATM</span>
+          <p>
+          Access cash withdrawal services using debit/Credit cards over 100+ banks.
+          </p>
         </div>
-        <div className="contentLmore1">
+        <div className="imgsec1">
+          <img src={microAtm} alt="" />
+        </div>
+      </div>
+      <div className="contentLmore1">
           <span>Benefits</span>
           <div className="lmore-part2">
-            <img src={AepsImg} alt="" />
+            <img src={microAtm} alt="" />
             <ul>
               <li>
                 It facilitates access to bank accounts through Aadhaar for all
@@ -74,10 +69,9 @@ const ServiceAeps = () => {
           <Link to='/register'>Join Now</Link>
           </div>
         </div>
-      </div>
-      <Footer />
     </div>
-  );
-};
+    <Footer /></div>
+  )
+}
 
-export default ServiceAeps;
+export default ServiceMicroatm

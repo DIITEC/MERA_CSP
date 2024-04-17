@@ -46,7 +46,7 @@ const ServicesEarn = () => {
                     making it easier than ever to find what you're looking for,
                     whenever you need it.
                   </span>
-                  <Link to="/aeps-page">Learn More</Link>
+                  <Link to="/digitalBazar-page">Learn More</Link>
                 </div>
                 <div className="srvsSec2det">
                   <img src={digBajar} alt="" />

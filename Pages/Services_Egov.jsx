@@ -50,7 +50,7 @@ const Services_Egov = () => {
                     balance inquiries and cash withdrawals through a Business
                     Correspondent.
                   </span>
-                  <Link to="/aeps-page">Learn More</Link>
+                  <Link to="/pan-page">Learn More</Link>
                 </div>
                 <div className="srvsSec2det">
                   <img src={panCard} alt="" />
@@ -63,7 +63,7 @@ const Services_Egov = () => {
                     Access cash withdrawal services using debit/Credit cards
                     over 100+ banks.
                   </span>
-                  <Link to="/microAtm-page">Learn More</Link>
+                  <Link to="/income-page">Learn More</Link>
                 </div>
                 <div className="srvsSec2det">
                   <img src={incomeTax} alt="" />
@@ -78,7 +78,7 @@ const Services_Egov = () => {
                     there customer to open there account attractive commission
                     on there account opening.
                   </span>
-                  <Link>Learn More</Link>
+                  <Link to="/estamp-page">Learn More</Link>
                 </div>
                 <div className="srvsSec2det">
                   <img src={eStamping} alt="" />
@@ -93,7 +93,7 @@ const Services_Egov = () => {
                     Customers will visit the merchant outlet to avail of AePS
                     cash deposit services.
                   </span>
-                  <Link>Learn More</Link>
+                  <Link to="/egovern-page">Learn More</Link>
                 </div>
                 <div className="srvsSec2det">
                   <img src={eGovernance} alt="" />
@@ -101,14 +101,15 @@ const Services_Egov = () => {
               </div>
               <div className="srvsbox">
                 <div className="srvsSec1det">
-                  <span>MO-Seba Kendra </span>
+                  <span>FASTag </span>
                   <span>
-                    MeraCSP enabling partner merchants to provide banking
-                    services to their customers in their local communities.
-                    Customers will visit the merchant outlet to avail of AePS
-                    cash deposit services.
+                    FASTag is an electronic toll collection system in India,
+                    operated by the National Highways Authority of India (NHAI).
+                    It employs Radio Frequency Identification (RFID) technology
+                    for making toll payments directly from the prepaid or
+                    savings account linked to it or directly toll owner.
                   </span>
-                  <Link>Learn More</Link>
+                  <Link to="/moseba-page">Learn More</Link>
                 </div>
                 <div className="srvsSec2det">
                   <img src={moSeba} alt="" />
@@ -123,7 +124,7 @@ const Services_Egov = () => {
                     Customers will visit the merchant outlet to avail of AePS
                     cash deposit services.
                   </span>
-                  <Link>Learn More</Link>
+                  <Link to="/umang-page">Learn More</Link>
                 </div>
                 <div className="srvsSec2det">
                   <img src={Umang} alt="" />

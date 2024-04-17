@@ -51,7 +51,7 @@ const ServicesPayment = () => {
                     bill payment services directly from your shop, catering to
                     the needs of every household.
                   </span>
-                  <Link to="/aeps-page">Learn More</Link>
+                  <Link to="/bbps-page">Learn More</Link>
                 </div>
                 <div className="srvsSec2det">
                   <img src={Bbps} alt="" />
@@ -66,7 +66,7 @@ const ServicesPayment = () => {
                     annually, ensuring a reliable and recurring income stream
                     for your business.
                   </span>
-                  <Link to="/microAtm-page">Learn More</Link>
+                  <Link to="/lic-page">Learn More</Link>
                 </div>
                 <div className="srvsSec2det">
                   <img src={LIcimage} alt="" />
@@ -82,7 +82,7 @@ const ServicesPayment = () => {
                     for recharge transactions to establish a steady and
                     recurring income stream.
                   </span>
-                  <Link>Learn More</Link>
+                  <Link to="/recharge-page">Learn More</Link>
                 </div>
                 <div className="srvsSec2det">
                   <img src={dthrecharge} alt="" />
@@ -98,7 +98,7 @@ const ServicesPayment = () => {
                     ensuring uninterrupted connectivity, these services offer
                     convenience and flexibility.
                   </span>
-                  <Link>Learn More</Link>
+                  <Link to="/gp-page">Learn More</Link>
                 </div>
                 <div className="srvsSec2det">
                   <img src={gpimage} alt="" />

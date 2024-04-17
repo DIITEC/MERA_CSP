@@ -70,7 +70,7 @@ const ServiceBox = ({}) => {
                     there customer to open there account attractive commission
                     on there account opening.
                   </span>
-                  <Link>Learn More</Link>
+                  <Link to='/Accountopen-page'>Learn More</Link>
                 </div>
                 <div className="srvsSec2det">
                   <img src={accountOpening} alt="" />
@@ -85,7 +85,7 @@ const ServiceBox = ({}) => {
                     Customers will visit the merchant outlet to avail of AePS
                     cash deposit services.
                   </span>
-                  <Link>Learn More</Link>
+                  <Link to='/Cashdeposit-page'>Learn More</Link>
                 </div>
                 <div className="srvsSec2det">
                   <img src={cashDeposit} alt="" />

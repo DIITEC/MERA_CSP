@@ -26,7 +26,25 @@ import ServicesLearning from "./Pages/ServicesLearning";
 import Refund from "./policy/Refund";
 import Terms from "./policy/Terms";
 import Privacy from "./policy/Privacy";
-
+import ServiceCashdeposit from "./Components/ServiceCashdeposit";
+import ServiceAccount from "./Components/ServiceAccount";
+import ServiceMicroatm from "./Components/ServiceMicroatm";
+import SrvPan from "./Components/SpanCard";
+import SrvIncomeTax from "./Components/Sincome";
+import SrvUmang from "./Components/SUmang";
+import SrvMokendra from "./Components/Smokendra";
+import Srvestamping from "./Components/Sestamp";
+import Egovern from "./Components/Egovern";
+import Sbbps from "./Components/Sbbps";
+import Sgp from "./Components/Sgp";
+import Slic from "./Components/Slic";
+import Smobile from "./Components/Smobile";
+import SgeneralIns from "./Components/SgeneralIns";
+import ShealthIns from "./Components/ShealthIns";
+import Sirctc from "./Components/Sirctc";
+import Sbus from "./Components/Sbus";
+import SFlight from "./Components/SFlight";
+import SdigitalBajar from "./Components/SdigitalBajar";
 const App = () => {
   const [user, setUser] = useState(null);
 
@@ -43,7 +61,31 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<AboutUS />} />
         <Route path="/Contact" element={<Contactus />} />
+
         <Route path="/aeps-page" element={<ServiceAeps />} />
+        <Route path="/Cashdeposit-page" element={<ServiceCashdeposit />} />
+        <Route path="/Accountopen-page" element={<ServiceAccount />} />
+        <Route path="/microAtm-page" element={<ServiceMicroatm />} />
+        <Route path="/pan-page" element={<SrvPan />} />
+        <Route path="/income-page" element={<SrvIncomeTax />} />
+        <Route path="/umang-page" element={<SrvUmang />} />
+        <Route path="/moseba-page" element={<SrvMokendra />} />
+        <Route path="/estamp-page" element={<Srvestamping />} />
+        <Route path="/egovern-page" element={<Egovern />} />
+
+        <Route path="/bbps-page" element={<Sbbps />} />
+        <Route path="/gp-page" element={<Sgp />} />
+        <Route path="/lic-page" element={<Slic />} />
+        <Route path="/recharge-page" element={<Smobile />} />
+
+        <Route path="/generalInsurance-page" element={<SgeneralIns />} />
+        <Route path="/healthInsurance-page" element={<ShealthIns />} />
+
+        <Route path="/irctc-page" element={<Sirctc />} />
+        <Route path="/bus-page" element={<Sbus />} />
+        <Route path="/plane-page" element={<SFlight />} />
+
+        <Route path="/digitalBazar-page" element={<SdigitalBajar />} />
       
         <Route path="/Service_banking" element={<Services />} />
         <Route path="/Service_egovern" element={<Services_Egov />} />

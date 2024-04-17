@@ -3,9 +3,9 @@ import "./ServiceAeps.css";
 import Navtop from "./Navtop";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import AepsImg from "../Images/aepsadharsrvs.png";
+import AepsImg from "../Images/moSebakendra.png";
 import { Link } from "react-router-dom";
-const ServiceAeps = () => {
+const Smokendra = () => {
   return (
     <div>
       <Navtop />
@@ -13,12 +13,13 @@ const ServiceAeps = () => {
       <div className="serviceAeps-Mainbox">
         <div id="serviceAepsCArdSrvs" className=" cardServiceSec1">
           <div className="contents1">
-            <span>Aeps</span>
+            <span>FASTag</span>
             <p>
-              It's a payment service enabling bank customers to utilize Aadhaar
-              as their identity to access Aadhaar-enabled bank accounts,
-              facilitating basic banking transactions such as balance inquiries
-              and cash withdrawals through a Business Correspondent.
+              FASTag is an electronic toll collection system in India, operated
+              by the National Highways Authority of India (NHAI). It employs
+              Radio Frequency Identification (RFID) technology for making toll
+              payments directly from the prepaid or savings account linked to it
+              or directly toll owner.{" "}
             </p>
           </div>
           <div className="imgsec1">
@@ -62,8 +63,11 @@ const ServiceAeps = () => {
               <li>Pan Card</li>
               <li>Aadhar Card / Voter ID card</li>
               <li>Driving Licence / Passport</li>
-              <li>Passport sized photograph  in neutral background</li>
-              <li>cancelled cheque / Passbook first page  of applicant's bank account  / Bank Statement</li>
+              <li>Passport sized photograph in neutral background</li>
+              <li>
+                cancelled cheque / Passbook first page of applicant's bank
+                account / Bank Statement
+              </li>
             </ul>
           </div>
         </div>
@@ -80,4 +84,4 @@ const ServiceAeps = () => {
   );
 };
 
-export default ServiceAeps;
+export default Smokendra;
