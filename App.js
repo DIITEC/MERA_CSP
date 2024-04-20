@@ -45,8 +45,11 @@ import Sirctc from "./Components/Sirctc";
 import Sbus from "./Components/Sbus";
 import SFlight from "./Components/SFlight";
 import SdigitalBajar from "./Components/SdigitalBajar";
+import Initialtemplates from "./Pages/AdminSection/TestSeries/Initialtemplates";
+import Modulepaper from "./Pages/AdminSection/TestSeries/Modulepaper";
 const App = () => {
   const [user, setUser] = useState(null);
+  const [assesmentUser, setassesmentUser] = useState(null);
 
   return (
     <Router>
@@ -55,8 +58,18 @@ const App = () => {
         <Route path="/login" element={<LoginForm setUser={setUser} />} />
         <Route path="/loginUserPannel" element={<LoginForm setUser={setUser} />} />
         <Route path="/admin" element={user ? <AdminPanel user={user} /> : <Navigate to="/login" />} />
-
-        <Route path="/userPannel-assesments" element={user ? <Assesment user={user} /> : <Navigate to="/login" />} />
+        <Route path="/initialtestStart" element={user ? <Initialtemplates user={user} /> : <Navigate to="/login" />} />
+        <Route
+          path="/ModulePaperTest"
+          element={
+            user ? (
+              <Modulepaper setassesmentUser={setassesmentUser} user={user}/> 
+            ) : (
+              <Navigate to="/login" />
+            )
+          }
+        />
+        <Route path="/userPannel-assesments" element={user ? <Assesment user={user} assesmentUser={assesmentUser} /> : <Navigate to="/login" />} />
         <Route path="/userPannel-dashboard" element={user ? <AdminPanel user={user} /> : <Navigate to="/login" />} />
         <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<AboutUS />} />
@@ -102,7 +115,7 @@ const App = () => {
 
 
         <Route path="/enrollment-registration" element={<DigitalMitraEnrollment />} />
-      </Routes>
+    </Routes>
     </Router>
   );
 };

@@ -60,7 +60,7 @@ const Navbar = () => {
           <div className={isOpenq ? "bar open" : "bar"}></div>
           <div className={isOpenq ? "bar open" : "bar"}></div>
         </div>
-        <ul>
+        <ul>ASQ Q 
           <li>
             <Link to="/" onClick={toggleNav}>
               HOME

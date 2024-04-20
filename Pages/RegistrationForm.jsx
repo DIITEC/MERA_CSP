@@ -55,9 +55,11 @@ const RegistrationForm = () => {
           },
         }
       );
-  
+      if (response.data.redirectUrl) {
+        window.location.href = response.data.redirectUrl; // Redirect the user to the specified URL
+      }
       // If registration is successful
-      if (response.status === 200) {
+      if (response.data.success) {
         alert("Registration successful! Check your email for login details.");
         navigate("/login");
       } else {

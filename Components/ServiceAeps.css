@@ -73,8 +73,8 @@
   max-width: 414px;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: self-start;
   gap: 36px;
   padding: 47px 10px;
 }
