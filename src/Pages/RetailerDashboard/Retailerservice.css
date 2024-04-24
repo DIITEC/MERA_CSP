@@ -14,19 +14,19 @@
     align-items: center;
 
 }
-.servicerd_box1{
+.servicerd_box1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 300px;
-    gap: 20px;
+    height: 251px;
+    gap: 7px;
     background-color: #fff;
     box-shadow: 0px 0px 19px -13px black;
     border: 1px solid rgb(205, 205, 205);
     padding: 20px 30px;
     border-radius: 12px;
-    width: 250px;
+    width: 224px;
 }
 .servicerd_box1 > img{
     width: 100px;
@@ -60,6 +60,7 @@
 
 }
 .servicerd_box1>span{
+    text-align: center;
     color: #646464;
     font-weight: 400;
 }

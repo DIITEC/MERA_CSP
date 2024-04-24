@@ -1,23 +1,59 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Verificationform = () => {
+const Verificationform = ({ onSubmit }) => {
+  const [formData, setFormData] = useState({
+    certificate_number: "",
+    email: "",
+    phone_number: ""
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Call the onSubmit function from props and pass the form data
+    onSubmit(formData);
+    console.log(formData);
+  };
+
   return (
     <div>
-      <form  style={{"width":"100%"}} action="post" className="verification-digi">
+      <form onSubmit={handleSubmit} style={{ width: "100%" }} className="verification-digi">
         <div className="vdf1">
-          <input type="text" placeholder="DM-ETC Registration Number" />
+          <input
+            type="text"
+            name="certificate_number"
+            placeholder="DM-ETC Registration Number"
+            value={formData.certificate_number}
+            onChange={handleChange}
+          />
           <span>Verify Now</span>
         </div>
         <div className="vdf1">
-          <input type="email" placeholder="Enter registered email id" />
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter registered email id"
+            value={formData.email}
+            onChange={handleChange}
+          />
           <span>Verify Now</span>
         </div>
         <div className="vdf1">
-          <input type="number" placeholder="Enter registered Mobile Number" />
+          <input
+            type="number"
+            name="phone_number"
+            placeholder="Enter registered phone_number Number"
+            value={formData.phone_number}
+            onChange={handleChange}
+          />
           <span>Verify Now</span>
         </div>
-        <Link id="Digi-Box-1-1-btn">Next</Link>
+        <button type="submit" id="Digi-Box-1-1-btn">Next</button>
       </form>
     </div>
   );
