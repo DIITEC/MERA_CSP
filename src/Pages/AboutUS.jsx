@@ -6,6 +6,7 @@ import Footer from "../Components/Footer";
 import clgrl from "../Images/clgrl.webp";
 import clgrl2 from "../Images/clggrl2.webp";
 import vijaysirprof from "../Images/vijaysirprof.JPG";
+
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import XIcon from '@mui/icons-material/X';

@@ -23,17 +23,38 @@ const Footer = () => {
               Financial Services.
             </p>
             <img src={playstore} />
-
-            
           </div>
+
+          <div className="footer-section2 downloadSec">
+            <p style={{"marginLeft":"0px !important"}}>Important Updates :</p>
+            <ul>
+              <li>
+                <a href="/privacy-policy">Downloads </a>
+              </li>
+              <li>
+                <a href="/privacy-policy">RD Services</a>
+              </li>
+              <li style={{"marginTop":"54px"}}>
+                <a href="/privacy-policy">Privacy & Refund Policy </a>
+              </li>
+              {/* <li>
+                <a href="/refund-policy">Refund Policy</a>
+              </li> */}
+              <li>
+                <a href="/terms-condition">Terms & Conditions </a>
+              </li>
+            </ul>
+          </div>
+
           <div className="footer-section2 officialSec">
             <p>Official Info :</p>
             <ul>
               <li>
                 <LocationOnIcon />
                 <a href="#">
-                  DIITEC Innovation Pvt. Ltd., 343/218A, Maholipura, Near
-                  Panitanki Chauraha, Bahraich <br /> Pin-271801 <br /> Uttar Pradesh, India
+                  DIITEC INNOVATIONS PVT. LTD. / MeraCSP <br /> 343/218A,
+                  Maholipura, Near Panitanki Chauraha, Bahraich <br />{" "}
+                  Pin-271801 <br /> Uttar Pradesh, India
                 </a>
               </li>
               <li>
@@ -49,26 +70,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="footer-section2 downloadSec">
-            <p>Downloads</p>
-            <ul>
-              <li>
-                <a href="#">Microsoft .NET Framework 4.5 Web Installer</a>
-              </li>
-              <li>
-                <a href="#">Morpho RD Service</a>
-              </li>
-              <li>
-                <a href="#">Morpho RD Service</a>
-              </li>
-              <li>
-                <a href="#">Startek RD Service</a>
-              </li>
-              <li>
-                <a href="#">Oprating System</a>
-              </li>
-            </ul>
-          </div>
+
           <div className="footer-section2">
             <p>YOUTUBE </p>
             <Iframe
@@ -84,7 +86,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer_copyRight">
-          <span>2023 © All rights reserved by MeraCSP</span>
+          <span>2024 © All rights reserved by MeraCSP</span>
           <span>
             Designed & developed by{" "}
             <a href="http://diitec.in/"> DIITEC INNOVATIONS PVT. LTD.</a>

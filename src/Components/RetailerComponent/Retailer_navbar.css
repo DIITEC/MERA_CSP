@@ -1,0 +1,27 @@
+.Retailer_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 10px;
+    padding-left: 20px;
+    border-bottom: 1px solid #b7b7b7;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 45px -29px black;
+}
+.navretail_left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.navretail_right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-right: 16px;
+}
+.navretail_right>img{
+    width: 70px;
+}

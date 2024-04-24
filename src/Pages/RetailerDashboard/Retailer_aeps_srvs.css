@@ -1,0 +1,184 @@
+.retailer_aeps_srvs > h1 {
+  font-size: 17px;
+  color: #04a2f8;
+  font-weight: 600;
+}
+.retailer_aeps_srvs {
+  margin: 17px 16px;
+}
+.aeps_retailerMain {
+  display: grid !important;
+  grid-template-columns: 29.3% auto 36.3%;
+}
+.aeps_retailerMain > div {
+  border: 1px solid #dbdbdb;
+  padding: 14px 10px;
+  /* width: 300px; */
+  height: 450px;
+}
+.aeps_customerDetails > span {
+  font-size: 21px;
+  font-weight: 700;
+  color: #6b6b6b;
+  margin-bottom: 10px;
+}
+
+.content_costomeraeps {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  /* margin-top: 20px; */
+}
+.content_bankaeps {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-top: 30px;
+}
+.content_bankaeps > input {
+  width: 100%;
+  border: 1px solid #c3c3c3;
+  border-radius: 5px;
+  height: 30px;
+  font-size: 14px;
+  padding: 0px 10px;
+  font-weight: 600;
+}
+.input1_aeps > input {
+  width: 100%;
+  border: 1px solid #c3c3c3;
+  border-radius: 5px;
+  height: 30px;
+  font-size: 14px;
+  padding: 0px 10px;
+  font-weight: 600;
+}
+.input1_aeps > label {
+  background-color: #fff;
+  font-size: 11px;
+  font-weight: 500;
+  color: #6f6f6f;
+  bottom: -16px;
+  position: relative;
+  left: 9px;
+}
+.content_costomeraeps > input {
+  width: 100%;
+  border: 1px solid #c3c3c3;
+  border-radius: 5px;
+  height: 30px;
+  font-size: 14px;
+  padding: 0px 10px;
+  font-weight: 600;
+}
+/* bank */
+.bank-list-container {
+  overflow-y: scroll;
+  height: 21rem;
+}
+.bank-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 11px;
+}
+
+.bank-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 14px -8px black;
+  border-radius: 11px;
+  width: 88px;
+  height: 114px;
+}
+.bank-name {
+  font-size: 12px;
+  width: 61px;
+  text-align: center;
+  margin-top: 6px;
+}
+.bank-item:hover {
+  background-color: #f5f5f5;
+}
+
+.bank-logo {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.tick-mark {
+  margin-left: auto;
+  font-size: 20px;
+  color: green;
+  visibility: hidden;
+}
+
+.selected .tick-mark {
+  visibility: visible;
+}
+.aeps_transactionContent {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 34px;
+}
+.cashWithdraw_aeps {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 14px -8px black;
+  border-radius: 11px;
+  width: 150px;
+  height: 135px;
+  text-align: center;
+  color: #0a53d8;
+}
+.cashWithdraw_aeps > .tick-mark {
+  visibility: visible !important;
+  position: absolute;
+  margin-left: 114px;
+  margin-bottom: 101px;
+}
+.input_cashwithdrawal {
+  margin-top: 30px;
+}
+.input_cashwithdrawal > input {
+  width: 100%;
+  border: 1px solid #c3c3c3;
+  border-radius: 5px;
+  height: 30px;
+  font-size: 14px;
+  padding: 0px 10px;
+  font-weight: 600;
+}
+.aeps_btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.aeps_btn > button {
+  width: 240px;
+  background-color: #04a2f8;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 7px 15px;
+}

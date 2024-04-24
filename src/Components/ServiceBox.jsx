@@ -42,7 +42,7 @@ const ServiceBox = ({}) => {
                     balance inquiries and cash withdrawals through a Business
                     Correspondent.
                   </span>
-                  <button>Learn More</button>
+                  <Link to='/aeps-page'>Learn More</Link>
                 </div>
                 <div className="srvsSec2det">
                   <img src={Aepssrvsimg} alt="" />
@@ -55,7 +55,7 @@ const ServiceBox = ({}) => {
                     Access cash withdrawal services using debit/Credit cards
                     over 100+ banks.
                   </span>
-                  <button>Learn More</button>
+                  <Link to='/microAtm-page'>Learn More</Link>
                 </div>
                 <div className="srvsSec2det">
                   <img src={microAtm} alt="" />
@@ -70,7 +70,7 @@ const ServiceBox = ({}) => {
                     there customer to open there account attractive commission
                     on there account opening.
                   </span>
-                  <button>Learn More</button>
+                  <Link to='/Accountopen-page'>Learn More</Link>
                 </div>
                 <div className="srvsSec2det">
                   <img src={accountOpening} alt="" />
@@ -85,7 +85,7 @@ const ServiceBox = ({}) => {
                     Customers will visit the merchant outlet to avail of AePS
                     cash deposit services.
                   </span>
-                  <button>Learn More</button>
+                  <Link to='/Cashdeposit-page'>Learn More</Link>
                 </div>
                 <div className="srvsSec2det">
                   <img src={cashDeposit} alt="" />

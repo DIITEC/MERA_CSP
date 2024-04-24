@@ -14,6 +14,7 @@ const Header = ({user}) => {
         <div className="account-header">
         <span>Welcome:</span>
           <AccountCircleIcon/>
+          <img src={user.photo} alt="" />
           
           <span>{user.username}</span>
         </div>

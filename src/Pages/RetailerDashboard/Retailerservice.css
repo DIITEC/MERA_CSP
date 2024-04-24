@@ -1,0 +1,65 @@
+.Retailerservice_box > h1 {
+  font-size: 17px;
+  color: #5c5c5c;
+  font-weight: 600;
+}
+.Retailerservice_box {
+  margin: 17px 16px;
+}
+.servicesSecBoxes{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    align-items: center;
+
+}
+.servicerd_box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    gap: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px -13px black;
+    border: 1px solid rgb(205, 205, 205);
+    padding: 20px 30px;
+    border-radius: 12px;
+    width: 250px;
+}
+.servicerd_box1 > img{
+    width: 100px;
+}
+.srvs_rdcontent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+.srvs_rdcontent>a{
+    background-color: #0a53d8;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 7px 20px;
+    border-radius: 7px;
+    transition-delay: 100ms;
+    transition: all 200ms ease-in;
+
+}
+.srvs_rdcontent>a:hover{
+    background-color: #2966d5;
+    cursor: pointer;
+}
+.srvs_rdcontent>span{
+    color: #646464;
+    font-weight: 400;
+
+}
+.servicerd_box1>span{
+    color: #646464;
+    font-weight: 400;
+}

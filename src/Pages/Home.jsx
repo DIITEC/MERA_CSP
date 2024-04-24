@@ -8,10 +8,9 @@ import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
+// import { Carousel } from "react-responsive-carousel";
 import Navtop from "../Components/Navtop";
-import callicon from "../Images/callIcon.png";
-import clgrl from "../Images/clgrl.jpg";
+
 import im1 from "../Images/client-1.png";
 import im2 from "../Images/client-3.png";
 import im3 from "../Images/client-4.png";

@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./RegistrationForm.css";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const RegistrationForm = () => {
   const [formData, setFormData] = useState({
     name: "",
+    fathers_name: "",
     mobile: "",
     email: "",
     dob: "",
     address: "",
     gender: "",
     state: "",
-    district: "",
     photo: null,
+    district: "",
   });
 
   const navigate = useNavigate();
@@ -23,21 +24,56 @@ const RegistrationForm = () => {
       setFormData({ ...formData, [e.target.name]: e.target.value });
     } else {
       // For file input
-      setFormData({ ...formData, [e.target.name]: e.target.files[0] });
+      console.log("File:", e.target.files[0]); // Add this line for debugging
+      setFormData({ ...formData, photo: e.target.files[0] }); // Update photo directly
     }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3001/register', formData);
-      alert('Registration successful! Check your email for login details.');
-      navigate('/login');
+      const formDataToSend = new FormData();
+  
+      // Append all form data from the state to the FormData object
+      Object.entries(formData).forEach(([key, value]) => {
+        // Skip appending the photo field here
+        if (key !== "photo") {
+          formDataToSend.append(key, value);
+        }
+      });
+  
+      // Append photo separately
+      formDataToSend.append("photo", formData.photo);
+  
+      // Send form data to backend for registration
+      const response = await axios.post(
+        "http://localhost:8000/api/auth/register",
+        formDataToSend,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data", // Correct content type for file uploads
+          },
+        }
+      );
+      if (response.data.redirectUrl) {
+        window.location.href = response.data.redirectUrl; // Redirect the user to the specified URL
+      }
+      // If registration is successful
+      if (response.data.success) {
+        alert("Registration successful! Check your email for login details.");
+        navigate("/login");
+      } else {
+        // Handle registration failure
+        console.error("Registration failed.");
+        alert("Registration failed. Please try again.");
+      }
     } catch (error) {
-      console.error('Error submitting form:', error);
-      alert('Registration failed. Please try again.');
+      console.error("Error submitting form:", error);
+      alert("Registration failed. Please try again.");
     }
   };
+  
+
   return (
     <div className="RegistrationForm-mainBox">
       <div className="RegistrationForm">
@@ -70,13 +106,15 @@ const RegistrationForm = () => {
               />
             </div>
             <div>
-              <label htmlFor="fatherName">Father's/Mother's/Spouse's Name</label>
+              <label htmlFor="fatherName">
+                Father's/Mother's/Spouse's Name
+              </label>
               <input
                 type="text"
                 id="fatherName"
-                name="fatherName"
+                name="fathers_name"
                 placeholder="Enter Father's/Mother's/Spouse's Name"
-                value={formData.fatherName}
+                value={formData.fathers_name}
                 onChange={handleChange}
                 required
               />

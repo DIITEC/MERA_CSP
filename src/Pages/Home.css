@@ -279,7 +279,6 @@ form > button {
   padding-top: 50px;
 }
 
-
 .Contact-boxes1 > iframe {
   border: 0;
   width: 355px;
@@ -293,16 +292,31 @@ form > button {
   font-weight: 600 !important;
   font-weight: 500;
 }
-.linename-side1{
+.linename-side1 {
   margin: 20px 0px;
 }
-.linename-side1>div>div>div>ul>li>img{
+.linename-side1 > div > div > div > ul > li > img {
   width: 130px;
 }
-.purnLine{
+.purnLine {
   background-color: red;
   width: 2px !important;
   height: 12px !important;
   display: inline-block;
   margin-left: 3px;
+}
+
+@media only screen and (max-width: 768px) {
+  
+  .box-scrolling {
+    width: auto;
+    height: auto;
+  }
+  .Contact-boxes1 > iframe{
+    width: fit-content;
+  }
+  .cForm1 > input {
+
+    width: 100% !important;
+}
 }

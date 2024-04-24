@@ -9,8 +9,12 @@ const Services = () => {
     <div className="Services">
       <Navtop />
       <Navbar />
-      <ServiceBox  />
+
+      <ServiceBox   />
+
+      
       <Footer />
+      
     </div>
   );
 };

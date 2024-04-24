@@ -18,15 +18,17 @@ const LoginForm = ({ setUser }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
+    try 
+    {
       const response = await axios.post(
-        "http://localhost:3001/login",
+        "http://localhost:8000/api/auth/login",
         formData
       );
       alert("Login successful!");
       setUser(response.data.user);
       navigate("/admin"); // Use navigate instead of history.push
-    } catch (error) {
+    } 
+    catch (error) {
       console.error("Error logging in:", error);
       alert("Login failed. Please check your username and password.");
     }

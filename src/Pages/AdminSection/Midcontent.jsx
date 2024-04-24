@@ -31,7 +31,7 @@ const Midcontent = ({ user }) => {
 
           <div className="content">
             <span>Created on</span>
-            <span>{user.dateCreated}</span>
+            <span>{user.created_date}</span>
           </div>
         </div>
         <div className="box">
